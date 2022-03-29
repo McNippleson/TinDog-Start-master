@@ -1,21 +1,35 @@
 .titleh1 {
-    font-family: 'Montserrat';
+    color:ghostwhite;
+    font-family: "Montserrat";
     font-size: 3.6rem;
     font-weight: 900;
     line-height: 1.5;
-    color:ghostwhite;
     /* padding-right: 10%; */
 }
+
+/* * { outline: 1px red solid !important; visibility: visible !important } */
+
+body {
+    font-family: "Montserrat";
+}
+
 @media screen and (max-width: 440px) {
     .titleh1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }    
 }
 #title {
     background-color: #ff4c68;
+    padding-top: 5%;
+    max-height: 900px;
+}
+
+.navbar {
+    /* padding-bottom: 5rem; */
+    padding: 0 0 5rem;
 }
 .container-fluid {
-    padding: 3% 15%;
+    padding: 2% 15%;
 }
 
 .row i {
@@ -23,24 +37,27 @@
 }
 
 .iphonepic {
-    rotate: 25deg;
+    max-width: 80%;
     padding-left: 15%;
-    max-width: 100%;
-    overflow: hidden !important;
+    rotate: 25deg;
 }
 .navbar-brand {
-    font-size: 4rem;
     font-family: 'Ubuntu';
+    font-size: 3rem;
 }
-.row .btn {
+.dlbtn {
     margin-left: 10%;
     margin-top: 5%;
+    width:180px !important;
+}
 
-}
-.leftside {
+/* .leftside {
     margin: 7% auto 5% auto;
-}
+} */
 
 .nav-link {
     font-size:larger;
+    margin: 0 2rem;
+    color:rgb(230, 230, 230) !important;
+    font-weight:300;
 }
