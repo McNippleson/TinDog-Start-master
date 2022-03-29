@@ -1,9 +1,41 @@
 .titleh1 {
     font-family: 'Montserrat';
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 900;
     line-height: 1.5;
+    color:ghostwhite;
+    /* padding-right: 10%; */
 }
 #title {
     background-color: #ff4c68;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.row i {
+    margin: 0 15px 0 3px;
+}
+
+.iphonepic {
+    rotate: 25deg;
+    padding-left: 15%;
+    max-width: 100%;
+    overflow: hidden !important;
+}
+.navbar-brand {
+    font-size: 4rem;
+    font-family: 'Ubuntu';
+}
+.row .btn {
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+.leftside {
+    margin: 7% auto 5% auto;
+}
+
+.nav-link {
+    font-size:larger;
 }
