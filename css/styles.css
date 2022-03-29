@@ -6,6 +6,11 @@
     color:ghostwhite;
     /* padding-right: 10%; */
 }
+@media screen and (max-width: 440px) {
+    .titleh1 {
+        font-size: 3rem;
+    }    
+}
 #title {
     background-color: #ff4c68;
 }
