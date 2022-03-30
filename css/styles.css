@@ -64,6 +64,7 @@ body {
     color:rgb(230, 230, 230) !important;
     font-weight:300;
 }
+/* features section */
 
 #features .row {
     margin:0 10% 8%;
@@ -75,11 +76,12 @@ body {
 }
 
 #features p::first-letter {
-    text-decoration:underline;
-    text-decoration-color:#8f8f8f;
+    /* text-decoration: underline; */
+    /* font-weight: 500; */
 }
 #features p {
     color:#8f8f8f;
+    padding:0 10%;
 }
 #features .row .fa-solid {
     color: #ef8172;
@@ -91,5 +93,4 @@ body {
 }
 .featuredivs {
     margin-top: 7%;
-    /* min-width:33%; */
 }
