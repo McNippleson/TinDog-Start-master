@@ -36,6 +36,8 @@ body {
 }
 .container-fluid {
     padding: 2% 15%;
+    overflow: hidden;
+
 }
 
 .row i {
@@ -47,10 +49,13 @@ body {
     padding-left: 15%;
     transform:rotate(25deg);
     padding-top: 10% !important;
+    position: relative;
+    left:3rem;
+
 }
 .navbar-brand {
     font-family: 'Ubuntu';
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .dlbtn {
     margin-left: 5%;
@@ -69,6 +74,11 @@ body {
     font-weight:300;
 }
 /* features section */
+#features {
+    background-color: white;
+    /* position:relative; */
+    /* z-index:1; */
+}
 
 #features .row {
     margin:0 10% 8%;
@@ -106,7 +116,7 @@ body {
     color:ghostwhite;
 
 }
-#testimonials h2 {
+#testimonials h2, #pricing > h2 {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: bold;
@@ -134,4 +144,8 @@ body {
 } 
 #pricing .col {
     margin-top: 3%;
+}
+
+.card-body {
+    padding-top: 5%;
 }
