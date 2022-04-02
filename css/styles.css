@@ -1,13 +1,13 @@
 #title {
     background-color: #ff4c68;
-    padding-top: 5%;
     max-height: 900px;
-    overflow: hidden;
+    padding-top: 5%;
+    /* overflow: hidden; */
 }
 
 
 .titleh1 {
-    color:ghostwhite;
+    color: ghostwhite;
     font-family: "Montserrat";
     font-size: 3.6rem;
     font-weight: 900;
@@ -21,46 +21,42 @@ body {
     font-family: "Montserrat";
 }
 
-@media screen and (max-width: 440px) {
-    .titleh1 {
-        font-size: 2.8rem;
-    }
-    #testimonials h2 {
-        font-size:2rem !important;
-    }
-}
-
 .navbar {
     /* padding-bottom: 5rem; */
     padding: 0 0 5rem;
 }
+
 .container-fluid {
-    padding: 2% 15%;
     overflow: hidden;
+    padding: 2% 15%;
 
 }
 
-.row i {
+.row i, #cta i {
     margin: 0 15px 0 3px;
 }
 
 .iphonepic {
+    left: 3rem;
+    max-height: 800px;
     max-width: 80%;
     padding-left: 15%;
-    transform:rotate(25deg);
     padding-top: 10% !important;
     position: relative;
-    left:3rem;
+    transform: rotate(25deg);
+    z-index: 0;
 
 }
+
 .navbar-brand {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
 }
+
 .dlbtn {
     margin-left: 5%;
     margin-top: 5%;
-    width:180px !important;
+    width: 180px !important;
 }
 
 /* .leftside {
@@ -68,84 +64,161 @@ body {
 } */
 
 .nav-link {
-    font-size:larger;
+    color: rgb(230, 230, 230) !important;
+    font-size: larger;
+    font-weight: 300;
     margin: 0 2rem;
-    color:rgb(230, 230, 230) !important;
-    font-weight:300;
 }
+
 /* features section */
 #features {
     background-color: white;
-    /* position:relative; */
-    /* z-index:1; */
+    position: relative;
+    z-index: 1;
 }
 
 #features .row {
-    margin:0 10% 8%;
+    margin: 0 10% 5%;
     text-align: center;
 }
-#features h3, #pricing h3 {
+
+#features h3,
+#pricing h3 {
     font-size: 1.5rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 #features p::first-letter {
     /* text-decoration: underline; */
     /* font-weight: 500; */
 }
+
 #features p {
-    color:#8f8f8f;
-    padding:0 10%;
+    color: #8f8f8f;
+    padding: 0 10%;
 }
+
 #features .row .fa-solid {
     color: #ef8172;
     font-size: 4rem;
-    margin:3% 0 5% 0;
+    margin: 3% 0 5% 0;
 }
+
 #features .row .fa-solid:hover {
-    color:#ff4c68;
+    color: #ff4c68;
 }
+
 .featuredivs {
     margin-top: 7%;
 }
 
 /* Testimonials */
-#testimonials, #press {
+#testimonials,
+#press {
+    background-color: #ef8172;
+    color: ghostwhite;
     text-align: center;
-    background-color:#ef8172;
-    color:ghostwhite;
 
 }
-#testimonials h2, #pricing > h2 {
+
+#testimonials h2,
+#pricing>h2 {
     font-size: 3.5rem;
-    line-height: 1.5;
     font-weight: bold;
+    line-height: 1.5;
     margin-bottom: 40px;
 }
+
 #testimonials img {
     border-radius: 100%;
-    width:20%;
     margin: 20px;
-    min-width: 140px;
     max-width: 250px;
-}
-.pressimg {
-    width:14%;
     min-width: 140px;
+    width: 20%;
+}
+
+.pressimg {
     margin: 3% 5%;
+    min-width: 140px;
+    width: 14%;
 }
 
 .carousel-item {
-    padding:5% 10%;
+    padding: 5% 10%;
 }
 
 #pricing {
     margin: 5% 10%;
-} 
+}
+
 #pricing .col {
     margin-top: 3%;
 }
 
 .card-body {
     padding-top: 5%;
+}
+/* calltoaction */
+#cta {
+    background-color: #ff4c68;
+    padding-bottom: 4%;
+    text-align: center;
+}
+#cta h3 {
+    color:white;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 5% 20% 0;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+}
+footer a {
+    color: rgba(0, 0, 0, 0.527);
+}
+footer a:hover {
+    color:black;
+}
+.socmediaicons {
+    font-size: 30px;
+    margin:3%;
+}
+footer i {
+    margin: 0 1.5rem;
+}
+
+
+/* responsive */
+@media screen and (max-width: 440px) {
+    .titleh1 {
+        font-size: 2.8rem;
+    }
+
+    #testimonials h2 {
+        font-size: 2rem !important;
+    }
+    footer {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .iphonepic {
+    left: -0.5rem;
+    transform: rotate(0deg);
+}
+    #title {
+    text-align: center;
+}
+    .testimonial-text, #pricing h2 {
+    font-size: 2rem !important;
+}
+    .container-fluid {
+    padding:4% !important;
+}
+
 }
